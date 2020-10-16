@@ -8,23 +8,31 @@ public class Materials {
    window.price = 600;
 
    Materials materials = new Materials();
-   int price = materials.addMaterial(door,window);
+   int price = 0;
+   price = materials.addMaterial(door.price,window.price);
+   System.out.println(price);
+   price = materials.addMaterial(door,window);
+   System.out.println(price);
+   
+   price = materials.addMaterial(door.price,window);
+   System.out.println(price);
+   price = materials.addMaterial(door,window.price);
    System.out.println(price);
    //Make Window and set price
    //use all 4 addMaterial
    }
 
    public int addMaterial(int doorPrice, int windowPrice){
-      return 0;
+      return doorPrice + windowPrice;
    }
       public int addMaterial(Door door, Window window){
          return door.price + window.price;
    }
       public int addMaterial(int doorPrice,  Window window){
-      return 0;
+      return doorPrice + window.price;
    }
       public int addMaterial(Door door, int windowPrice){
-      return 0;
+      return door.price + windowPrice;
    }
 }
 
