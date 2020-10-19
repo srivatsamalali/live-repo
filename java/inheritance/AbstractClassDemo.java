@@ -16,8 +16,6 @@ public class AbstractClassDemo {
    education.teaching();
    education.methodology();
    //education.methodology();
-
-   //
    }
 }
 
