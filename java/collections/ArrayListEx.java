@@ -41,5 +41,3 @@ public static void main(String[] args) {
 // iterate and display the elements
 // remove all the elements
 
-
-

@@ -10,6 +10,11 @@ public static void main(String[] args) {
       age.add(6);
       age.add(2);
       age.add(1);
+      age.add(5);
+      age.add(6);
+      age.add(2);
+      age.add(1);
+      age.add(100);
       System.out.println(age);
    }
 }
