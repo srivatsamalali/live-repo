@@ -1,4 +1,4 @@
-:beginner: **Fundamentals**   
+:beginner: **Fundamentals**    
 :label: ***Classes and Objects***  
 
 
