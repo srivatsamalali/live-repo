@@ -213,12 +213,28 @@ FROM person p
 GROUP BY p.person_first_name
 HAVING FirstNameCount > 1;
 
+
 SELECT 
 COUNT(p.person_first_name) as FirstNameCount,
 p.person_first_name
 FROM person p
 GROUP BY p.person_first_name
-HAVING person_first_name > 1;
+HAVING p.person_first_name = 'Fritz';
+
+SELECT 
+COUNT(p.person_first_name) as FirstNameCount,
+p.person_first_name
+FROM person p
+GROUP BY p.person_first_name
+HAVING p.person_first_name = 'Fritzz';
+
+SELECT 
+COUNT(p.person_first_name) as FirstNameCount,
+p.person_first_name
+FROM person p
+--GROUP BY p.person_first_name
+HAVING p.person_first_name = 'Fritz';
+
 
 SELECT 
 COUNT(p.person_first_name) as FirstNameCount,
@@ -250,6 +266,12 @@ SELECT COUNT(p.person_first_name) as FirstNameCount,
 p.person_first_name 
 FROM person p  
 HAVING FirstNameCount > 1; 
+
+SELECT COUNT(p.person_first_name) as FirstNameCount, 
+p.person_first_name 
+FROM person p  
+HAVING person_first_name = 'Fritz'; 
+
 
 CREATE TABLE address(address_id INTEGER NOT NULL,	address_building_number VARCHAR(55) NOT NULL,	address_street VARCHAR(55) NOT NULL,	
 address_locality VARCHAR(55),	address_city VARCHAR(55) NOT NULL,	address_zip_postal VARCHAR(55) NOT NULL,	
